@@ -1,7 +1,11 @@
 parameters:
-#    cron.example.class: Tmas\CronBundle\Example
+    tmas.cron.time_provider.class: DateRepetition\TimeProvider
+    tmas.cron.scheduler.class: Tmas\CronBundle\Service\CronScheduler
 
 services:
-#    cron.example:
-#        class: %cron.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    tmas.cron.time_provider:
+        class: %tmas.cron.time_provider.class%
+
+    tmas.cron.scheduler:
+        class: %tmas.cron.scheduler.class%
+        arguments: [@tmas.cron.time_provider]
