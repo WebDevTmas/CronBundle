@@ -1,0 +1,19 @@
+{
+    "name": "tmas/cron-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "A bundle that helps you to schedule cron jobs",
+    "authors" : [{
+        "name" : "WebDevTmas",
+        "email" : "thomas@noemail.com"
+    }],
+    "autoload": {
+        "psr-0": { "Tmas\\CronBundle" : "" }
+    },
+    "require": {
+        "tmas/date-repetition": "0.2.3"
+    },
+    "target-dir" : "Tmas/CronBundle",
+    "repositories" : [{
+    }]
+}
