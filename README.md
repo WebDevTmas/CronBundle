@@ -5,6 +5,7 @@ User friendly symfony bundle that helps you schedule jobs
 Usage
 -----
 Just tag a service like this:
+
 *JSON*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 service_id:
